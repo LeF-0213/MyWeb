@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "AstaSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AstaSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AstaSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AstaSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AstaSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AstaSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  animation: fadeIn 0.5s;
+  font-family: AstaSans;
+  color: #2c3e50;
+}
+
+p {
+  color: #555;
+}
+
+footer {
+  background-color: #3498db;
+  padding: 2rem;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+logo {
+  display: flex;
+}
+
+logo img {
+  width: 80px;
+}
+
+nav {
+  background-color: #3498db;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-items: center;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-weight: bold;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 2rem 2rem;
+  min-height: calc(100vh - 80px);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav,
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    background-color: aquamarine;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+}
